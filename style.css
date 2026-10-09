@@ -2,7 +2,7 @@
     --background-color: linear-gradient(135deg, #0f1115 0%, #2e3440 100%);
     --button-color: #1e90ff;
     --button-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.3);
-
+     --clickable: 0 5px 15px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.3);
 }
 
 *{
@@ -42,9 +42,23 @@ body html{
     transition: all 0.3s ease;
     outline: none;
     touch-action: none;
-    border: none;
+    border:none;
     display: flex;
     align-items: center;
     justify-content: center;
 
+}
+
+.drag-button:active{
+    cursor: grabbing;
+     box-shadow: var(--clickable);
+     transform: translate(-50%, -50%) scale(0.95);
+
+
+}
+
+
+span{
+    font-size: 12px;
+    padding: 20px;
 }
