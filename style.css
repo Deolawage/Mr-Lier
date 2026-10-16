@@ -12,7 +12,7 @@
 
 }
 
-body html{
+body{
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -20,7 +20,7 @@ body html{
     
 }
 
-.canvas{
+#canvas{
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -28,7 +28,7 @@ body html{
 
 }
 
-.drag-button{
+#drag-button{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,7 +49,7 @@ body html{
 
 }
 
-.drag-button:active{
+#drag-button:active{
     cursor: grabbing;
      box-shadow: var(--clickable);
      transform: translate(-50%, -50%) scale(0.95);
